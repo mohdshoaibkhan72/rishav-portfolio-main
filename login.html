@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.style.css" />
+    <link rel="icon" href="images/desk.jpg" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Login Page</title>
+    <script>
+      function validateLogin(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Get email and password values
+        const email = document.getElementById("email").value.trim().toLowerCase(); // Convert email to lowercase
+        const password = document.getElementById("password").value.trim(); // No need to change password case
+
+        // Define valid credentials
+        const validCredentials = [
+          { email: "up80pranks@gmail.com", password: "Rishav@123" },
+          { email: "esharathor18@gmail.com", password: "Esha@123" } // Add your second email/password pair
+        ];
+
+        // Check if email and password match any valid credentials
+        const userValid = validCredentials.some(
+          (cred) => cred.email === email && cred.password === password
+        );
+
+        if (userValid) {
+          // Redirect to a new page on successful login
+          window.location.href = "dashboard.html"; // Replace with your desired page
+        } else {
+          // Display an alert if login fails
+          alert("Invalid email or password. Please try again.");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="login-box">
+      <form onsubmit="validateLogin(event)">
+        <h2>Login</h2>
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <input type="email" name="email" id="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </span>
+          <input type="password" name="password" id="password" required />
+          <label for="password">Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label> <input type="checkbox" /> Remember me </label>
+          <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit">Login</button>
+        <div class="link">
+          <p>
+            Don't have an account?
+            <a href="#">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

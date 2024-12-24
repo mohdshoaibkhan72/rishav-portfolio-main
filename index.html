@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+
+    <!-- 
+    
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Rishav Khasariya</h1>
+
+            <p class="title">Video Editor</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:richard@example.com" class="contact-link"
+                  >Adityakhasariya1@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+918865033943" class="contact-link"
+                  >+91 8865033943
+                </a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">June 06, 1999</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>
+                  B-333 Sangam Gali New Ashok Nagar,Delhi-110096
+                </address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.facebook.com/RISHAVKHASARIYA1"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/rishav-khasariya-08a48b269/?originalSubdomain=in"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/rishu_khasariya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link onclick="checkPassword()">
+                Login
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              🎥 Creative Video Editor & Motion Graphics Designer | I'm a
+              passionate Video Editor and Motion Designer with a knack for
+              transforming complex ideas into visually stunning, engaging
+              content. With expertise in crafting captivating visuals for web,
+              social media, and print, I bring stories to life with seamless
+              edits and intuitive motion design. Let's create something
+              extraordinary!
+            </p>
+
+            <p>
+              My role is to transform raw footage into compelling stories that
+              captivate audiences and communicate your message effectively. I
+              ensure your videos are not only visually stunning but also
+              engaging and aligned with your brand's identity. From seamless
+              edits to eye-catching motion graphics, I bring a personal touch to
+              every project, making your content stand out. I've collaborated
+              with renowned brands to deliver videos that leave a lasting
+              impact. Let's turn your vision into reality!
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Graphic design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Song video icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Animation Video</h4>
+
+                  <p class="service-item-text">
+                    High-quality Animation Videos at the professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Color grading</h4>
+
+                  <p class="service-item-text">
+                    Professional Colour Grading Combination
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Photography</h4>
+
+                  <p class="service-item-text">
+                    I make high-quality photos of any category at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="https://yt3.googleusercontent.com/8KtJ4zZtp2VWU9s1aohehTRC1cuKAc5WYR8dPuesnGMA1gbViNtuYHPdNamRYYmC0oQ7lc8d=s900-c-k-c0x00ffffff-no-rj"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="https://yt3.googleusercontent.com/8KtJ4zZtp2VWU9s1aohehTRC1cuKAc5WYR8dPuesnGMA1gbViNtuYHPdNamRYYmC0oQ7lc8d=s900-c-k-c0x00ffffff-no-rj"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIjRn8dHovpsFDYT4M7onRT6jMYC7glO0Yrw&s"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="https://yt3.googleusercontent.com/ytc/AIdro_nM44oSEZEqnwKYeIIL2okMXBex1z1oXmShB4BmjRagIg=s160-c-k-c0x00ffffff-no-rj"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logoall.jpg" alt="client logo" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Graguation</h4>
+
+                <span>2018 - 2021 </span>
+
+                <p class="timeline-text">
+                  Dr. Bhimrao Ambedkar University Agra
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Intermediate</h4>
+
+                <span>2016 - 2018</span>
+
+                <p class="timeline-text">Sarvodhya Inter College</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">High school</h4>
+
+                <span>2014 - 2016 </span>
+
+                <p class="timeline-text">Sarvodhya Inter College</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Administrator & Content Creator
+                </h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  <b>Paisa4you Finance Services</b>
+                  <br />As a Company Administrator, I oversee the day-to-day
+                  operations and ensure seamless coordination across all
+                  departments. My responsibilities include managing
+                  administrative tasks, optimizing workflows, maintaining
+                  compliance with company policies, and supporting team members
+                  to achieve organizational goals.
+
+                  <br />
+                  In addition to administration, I bring creativity to the table
+                  by designing engaging posters and editing Instagram shorts to
+                  enhance our brand's presence on social media. By combining
+                  operational efficiency with impactful visual content, I
+                  contribute to the overall growth and success of Paisa4You.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  🎥 News Video Editor | Chroma Key & Animation Specialist
+                </h4>
+
+                <span>2022 - 2023</span>
+
+                <p class="timeline-text">
+                  <b>Darpan News Electronic Media</b>
+                  <br />As a News Video Editor, I specialize in creating dynamic
+                  and engaging news content using advanced chroma key techniques
+                  and animations. My expertise lies in seamlessly integrating
+                  green screen footage with virtual backgrounds, enhancing
+                  storytelling with visually impactful layouts and motion
+                  graphics. I ensure every frame aligns with the urgency and
+                  clarity required in news production, delivering polished
+                  videos that captivate and inform audiences. From breaking news
+                  to feature stories, I bring creativity and precision to every
+                  project.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">🎥 Video Editor</h4>
+
+                <span>2020 — 2022</span>
+
+                <p class="timeline-text">
+                  <b>All100News Electronic Media</b>
+                  <br />I specialize in editing videos to create visually
+                  appealing and engaging content. My work involves cutting,
+                  arranging, and enhancing footage to bring stories to life.
+                  With attention to detail and creativity, I ensure every video
+                  is polished and ready to captivate its audience. Whether it’s
+                  for social media, promotional content, or personal projects, I
+                  deliver high-quality results tailored to your vision.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Graphic design</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Animation Video</h5>
+                  <data value="70">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Color grading</h5>
+                  <data value="90">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Photography</h5>
+                  <data value="50">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>News Editing</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>News Video</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Song video</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Short Films</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="News Video"
+              >
+                <a href="https://youtu.be/bojykWDeXJc?si=c-lNGI3ykkkw90Sg">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/bojykWDeXJc/maxresdefault.jpg"
+                      alt="finance"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    #army शहीदों की शहादत को सलाम शहीद देवेंद्र सिंह बघेल
+                  </h3>
+
+                  <p class="project-category">News Video</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="News Video"
+              >
+                <a href="https://youtu.be/aviW8Yi-yeg?si=pX7yE0_3nraia_r4">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/aviW8Yi-yeg/maxresdefault.jpg"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Pakistani Woman Reached India: अपने प्यार से शादी करने भारत
+                    आई एक और Pakistani लड़की
+                  </h3>
+
+                  <p class="project-category">News Video</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://youtu.be/FRQ5aPhS798?si=Ct1A-aloLhqimJET">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/FRQ5aPhS798/maxresdefault.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    कथावाचक Devkinandan Thakur का दावा, कहा ''जामा मस्जिद की
+                    सीढ़ियों के नीचे श्री कृष्ण की मूर्ति
+                  </h3>
+
+                  <p class="project-category">News Video</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://youtu.be/tDsfFjWAKQ0?si=cxcsvJ2g-ZvNkND5">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/tDsfFjWAKQ0/maxresdefault.jpg"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    #PHONO:: प्रात दर्पण न्यूज़ से लाइव कवरेज आदित्य मुद्गल के
+                    साथ
+                  </h3>
+
+                  <p class="project-category">News Video</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://youtu.be/hZN4wbdZUQg?si=NHDxitvUBYvN6Zdi">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/hZN4wbdZUQg/maxresdefault.jpg"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    AGRA के ADVOCATE की अय्याशी के आगे छोटे हैं तमाम
+                    PORN-STAR,Hot video & फोटो नहीं है PORN MOVIE से कम
+                  </h3>
+
+                  <p class="project-category">News Video</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://youtu.be/MjcUdfmPJjU?si=QxhvBAkOqvEc7SOx">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/MjcUdfmPJjU/maxresdefault.jpg"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    अस्त्र न्यूज़ आगरा : उत्तर प्रदेश की टॉप 10 खबरें....
+                  </h3>
+
+                  <p class="project-category">News Video</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="projects">
+            <ul class="">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>Songe Editing</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>News Video</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Song video</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Short Films</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="News Video"
+              >
+                <a href="https://youtu.be/FHcZiTkFAsw?si=IB9ULseLqt-J3CyK">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/FHcZiTkFAsw/maxresdefault.jpg"
+                      alt="finance"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Youth king present|| Mujhe mat samjha || New Rap Song || RDX
+                    DEVIL
+                  </h3>
+
+                  <p class="project-category">Song Video</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="News Video"
+              >
+                <a href="https://youtu.be/Enn6p59g-kY?si=_qaaU9C84vkVyEvu">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/Enn6p59g-kY/maxresdefault.jpg"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Hip Hop Karne de |</h3>
+
+                  <p class="project-category">Song Video</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://youtu.be/jHg2fK4l6rY?si=snglpRXPXCI8uqKM">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/jHg2fK4l6rY/sddefault.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Up80 ke sher</h3>
+
+                  <p class="project-category">Song Video</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://youtu.be/uFluWQVr5iU?si=yQTeiCD0aCaVdy11">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/uFluWQVr5iU/maxresdefault.jpg"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    Tention M.A.M FT. SUKH up80 underground
+                  </h3>
+
+                  <p class="project-category">Song Video</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://youtu.be/WAJ6uZrCcMo?si=wIQN7Mf1kstiSQHN">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="https://img.youtube.com/vi/WAJ6uZrCcMo/maxresdefault.jpg"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Maa_Baap feat. Khota sikka</h3>
+
+                  <p class="project-category">Song Video</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13499.772536160737!2d78.018369!3d27.1366157!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747708de6c49a1%3A0xc117ef02a70ce4a3!2sKhasariya%20Tuition%20Classess!5e1!3m2!1sen!2sin!4v1733563541135!5m2!1sen!2sin"
+                width="800"
+                height="600"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <!-- Replace with your Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="b54867b0-e429-4636-a569-0106752835e3"
+              />
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+  <script>
+    // Function to check the password before navigating
+    function checkPassword() {
+      // Prompt the user for the password
+      const password = prompt("Please enter the password:");
+  
+      // Check if the entered password is correct
+      if (password === "06061999") {
+        // If the password is correct, allow navigation
+        window.location.href = "login.html";
+      } else {
+        // If the password is incorrect, show an alert
+        alert("Incorrect password. Access denied.");
+      }
+    }
+  </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

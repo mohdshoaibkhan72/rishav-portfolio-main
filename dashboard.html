@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload and View Images</title>
+</head>
+<body>
+    <h1>Upload and View Images</h1>
+
+    <!-- Image Upload Form -->
+    <div id="upload-form">
+        <h2>Upload an Image</h2>
+        <input type="file" id="file-input" accept="image/*" required><br><br>
+        <button onclick="uploadImage()">Upload Image</button>
+    </div>
+
+    <!-- Display uploaded images -->
+    <div id="gallery">
+        <h2>Your Images:</h2>
+        <div id="images"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const cloudinaryUrl = 'https://api.cloudinary.com/v1_1/YOUR_CLOUD_NAME/image/upload';
+        const cloudinaryUploadPreset = 'YOUR_UPLOAD_PRESET'; // Set this in Cloudinary
+
+        // Upload Image to Cloudinary
+        function uploadImage() {
+            const fileInput = document.getElementById('file-input');
+            const file = fileInput.files[0];
+
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("upload_preset", cloudinaryUploadPreset);
+
+            // Upload the image to Cloudinary
+            $.ajax({
+                url: cloudinaryUrl,
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(response) {
+                    console.log("Image uploaded: ", response);
+                    const imageUrl = response.secure_url;
+
+                    // Display image in gallery
+                    const imgElement = document.createElement('img');
+                    imgElement.src = imageUrl;
+                    imgElement.width = 200;
+                    document.getElementById('images').appendChild(imgElement);
+                },
+                error: function(error) {
+                    console.log("Error uploading image: ", error);
+                }
+            });
+        }
+
+        // Load all images from Cloudinary (use your Cloudinary API to fetch images)
+        function loadImages() {
+            // This is a mock function for fetching images.
+            // You can fetch images from Cloudinary by using their API
+            // or from your own database where you store image URLs.
+
+            const images = [
+                "https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/v1/your_image_1.jpg",
+                "https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/v1/your_image_2.jpg"
+            ];
+
+            // Display images in the gallery
+            images.forEach(imageUrl => {
+                const imgElement = document.createElement('img');
+                imgElement.src = imageUrl;
+                imgElement.width = 200;
+                document.getElementById('images').appendChild(imgElement);
+            });
+        }
+
+        // Call the function to load images when the page loads
+        loadImages();
+    </script>
+</body>
+</html>
